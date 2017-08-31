@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { StyleSheet, Text, View, Image } from 'react-native';
+import React, {Component} from 'react';
+import {StyleSheet, Text, View, Image, StatusBar} from 'react-native';
 
 export class Card extends React.Component {
     render() {
@@ -14,7 +14,6 @@ export class Card extends React.Component {
 const styles = StyleSheet.create({
     card: {
         flex: 1,
-        backgroundColor: "#CCC",
-        justifyContent: "center"
+        backgroundColor: "#CCC"
     }
 });
