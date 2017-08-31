@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
+import { Card } from './src/Card';
 
 export default class App extends React.Component {
   render() {
@@ -7,7 +8,11 @@ export default class App extends React.Component {
       uri: 'https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg'
     };
     return (
-      <Image source={pic} style={{width: 193, height: 110}}/>
+        <View style={styles.container}>
+          <View>
+              <Card></Card>
+          </View>
+        </View>
     );
   }
 }
@@ -18,5 +23,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+      marginLeft: "5%",
+      marginRight: "5%",
   },
 });
