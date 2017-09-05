@@ -1,4 +1,6 @@
 node_modules/
 .expo/
 npm-debug.*
-.idea
+.idea/
+package-lock.json
+yarn.lock
